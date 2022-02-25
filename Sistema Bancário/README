@@ -1,0 +1,30 @@
+Detalhes de implementação:
+Classe abstrata Conta Bancaria:
+• Método VerificaSenha: Deve verificar se a senha de entrada corresponde a senha da conta e retorna um valor 
+True ou False. Uma mensagem de aviso deve aparecer caso a senha esteja incorreta. 
+o Implementar polimorfismo, um método VerificaSenha (int), que verifica diretamente a senha, e um 
+VerificaSenha() que solicita a senha da conta.
+• Método saque: Deve simular uma operação de saque, ou seja, o cliente entra com um valor e esse valor é 
+retirado do saldo da conta. Deve utilizar o método VerificaSenha para permitir ou não o saque do valor.
+o Implementar polimorfismo, um método deposito (double), que retira diretamente o valor, e um 
+deposito() que solicita o valor a ser sacado através de uma caixa de dialogo
+• Método deposito: Deve simular uma operação de deposito, ou seja, o cliente entra com um valor e esse valor 
+é adicionado do saldo da conta.
+o Implementar polimorfismo, um método saque (double), que deposita diretamente o valor, e um 
+saque() que solicita o valor a ser depositado através de uma caixa de dialogo
+Classe Conta Corrente:
+• Info(): Informa, nome do banco, número da conta, nome do cliente, saldo da conta e taxas mensais cobradas 
+ao mês. 
+• Método NovoMes(): simula a passagem de um mês na conta corrente, cobrando da conta o valor contido no 
+atributo TaxasMensais. 
+Classe Conta Poupança:
+• Info(): Informa, nome do banco, número da conta, variação da poupança, nome do cliente, saldo da conta, 
+rendimento mensal (%), saques restantes no mês. 
+• Método NovoMes(): simula a passagem de um mês na conta corrente, aplicando o rendimento mensal no 
+valor do saldo e retornando a quantidade de saques da conta para 3.
+• Método saque: Deve simular uma operação de saque, ou seja, o cliente entra com um valor e esse valor é 
+retirado do saldo da conta. 
+o Para a conta poupança o cliente está limitado a 3 saques por mês, desta forma o cliente deve ser 
+impedido de sacar caso já tenha feito 3 operações de saque.
+o Implementar polimorfismo, um método deposito (double), que retira diretamente o valor, e um 
+deposito() que solicita o valor a ser sacado através de uma caixa de dialog
