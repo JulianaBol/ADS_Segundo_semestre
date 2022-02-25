@@ -1,0 +1,22 @@
+Exercício realizado com a construção de um sistema de aeroporto com as seguintes características:
+
+Detalhes de implementação:
+Classe Funcionario:
+• Método Info: informa o nome, cargo e salário de um objeto funcionário.
+• Método NovoSalario: utilizado para modificar o salário de um objeto funcionário. 
+Implementar polimorfismo, um método NovoSalario(double) que modifica diretamente o 
+salário, e um método NovoSalario() que pergunta qual o novo salário do funcionário através 
+de uma caixa de diálogo.
+Classe Piloto:
+• Método Info: informa o nome, salario, brevet e horas de voo de um piloto.
+• O salário de um piloto é calculado da seguinte forma: 3500 + (HorasVoo/2), por exemplo, um 
+piloto com 10000 horas voo teria um salário de 8500.
+• Método ModHorasVoo: utilizado para aumentar o valor de horas voo de um piloto. Além 
+disso sempre que o método for chamado ele deve atualizar também o salário do piloto, 
+utilizando novamente a seguinte formula: 3500 + (HorasVoo/2).
+Classe Aviao: 
+• Método Info: informa prefixo, empresa e modelo do avião.
+Classe Voo: 
+• A classe voo é composta por dois objetos, um piloto e um avião, além de seus outros atributos.
+• Método Info: deve informar o código do voo, a empresa aérea, a origem/destino do voo, nome 
+do comandante e informações sobre a aeronave
